@@ -1,0 +1,126 @@
+*,body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(119, 0, 230, 0.871);
+    /* padding:0px 50px; */
+}
+header{
+    width: 90%;
+    margin:auto;
+}
+header h1{
+    color:rgb(207, 211, 213);
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    margin-left:40px ;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+.container{
+    width: 90%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+}
+.hero1{
+    width:100%;
+}
+.hero1 img{
+    width:100%;
+}
+.hero2{
+    width:100%;
+    color:rgb(207, 211, 213);
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-top: 20px;
+    
+
+} 
+.hero2 h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.hero2 .text{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    max-width: 350px;
+    margin-top: 16px;
+}
+button{
+     width: 130px;
+     height: 33px;
+     padding: 8px;
+     border-radius: 25px;
+     border:none;
+     color:rgb(110, 114, 117) ;
+     font-weight: 700;
+     font-size: 12px;
+     box-shadow: 2px 2px 3px rgb(40, 38, 38),
+     -2px -2px 3px rgb(91, 87, 87);
+     cursor:pointer;
+     margin-top:20px;
+}
+ #icon{
+    font-size: 25px;
+    margin:5px;
+    position: absolute;
+    bottom: 0px;
+    right: 60px;
+}
+#icon i{
+    margin:5px;
+   color: rgb(207, 211, 213);
+}
+@media (max-width:500px) {
+         body{
+            background-color:rgba(119, 0, 230, 0.871) ;
+          }
+        .container{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .hero2{
+            margin-left: 0%;
+        }
+        section{
+            background-image: url(/bg-mobile.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position:top right;
+            background-color: rgba(119, 0, 230, 0.871);
+
+        }
+        .hero1{
+            width:80%;
+            margin: auto;
+        }
+        .hero2 .text{
+            width: 70%;
+            margin: auto;
+        }
+        header h1{
+            margin-bottom: 0%;
+        }
+        #icon{
+            position:absolute;
+            bottom: 0%;
+            right:0%;
+            left:0%;
+            margin:auto;
+        }
+
+}
